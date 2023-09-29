@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mass Mail Dispatcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  
+</head>
+<body>
+    <nav>
+       <ul>
+        
+       </ul> 
+    </nav>
+    <div class="bg">
+        <div class="container ">
+            <div class="select animated fadeInDown delay-4s">
+                <h1 id="head">Mass Mail Dispatcher</h1>
+
+                <input type="file" id="upload" accept="text/csv">      
+            </div>
+            <div class="mails">  
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h2 id="box-heading">MAIL INFORMATION</h2>
+                    <p><input type="email" id="from" placeholder="from (Email ID)" required></p>
+
+                    <p><input type="text" id="subject" placeholder="subject" required></p>
+                    <p><textarea id="message" rows="10" cols="10" placeholder="body" required></textarea></p>
+                    <p><button type="submit" id="submit">Send mail</button></p>
+                </form>
+            </div>
+        </div>
+    
+   
+    <hr>
+    <!--VALID TABLES-->
+    <div class="table">
+        <div class="valtab">
+            <table id="valid">
+                <tr>
+                    <td>
+                        <h3>valid mails: <span id="validcount"></span></h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <!--INVALID TABLES-->   
+        <div class="invaltab">
+            <table id="invalid">
+                <tr>
+                    <td>
+                        <h3>Invaild mails: <span id="invalidcount"></span></h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+<hr>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script>var wow = new WOW(
+    {
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset:0,
+        live: true,
+        callback: function (box) {
+        },
+        mobile: true,
+        scrollContainer: null,
+        resetAnimation: true,
+    }
+
+    );
+    wow.init();
+</script>
+<div class="footer">
+    <footer>
+        <p class="copyright">© 2023 akash kumar</p>
+    </footer>
+</div>
+
+    
+
+</body>
+</html>

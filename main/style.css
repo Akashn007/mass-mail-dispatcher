@@ -1,0 +1,152 @@
+*{
+    background-color: rgba(220, 245, 179, 0.915);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background: linear-gradient(to top left,#FCCF31 , #9c2727);
+}
+#heading{
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+}
+#box-heading{
+    padding:5px;
+    margin:auto;
+    text-align: center;
+    /* float: */
+}
+.mails{
+    /* display: flex; */
+    width:500px;
+    /* height:600px; */
+    position: center;
+    justify-content: center;
+    align-items: center; 
+    height:70%;
+    background-color: rgb(14, 107, 206);
+    /* border: 2px solid red; */
+    /* gap:10px; */
+    background: linear-gradient(to top left,#ffffffff,#ffffff33);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    
+    z-index: 2;
+}
+button{
+    border-radius: 50px;
+    font-size: 17px;
+    color: rgba(253, 253, 253, 0.915);
+    background-color: rgb(255, 115, 0);
+    display: inline-block;
+    border: 2px solid;
+    margin: 15px 30px;
+    padding: 10px 40px;
+    cursor: pointer;
+    
+    
+}
+
+#from,#subject{
+
+    margin:14px;
+    padding:10px;
+    width: 470px;
+    height:40px;
+    border-radius: 4px;
+}
+#message{
+    margin:14px;
+    padding:10px;
+    width: 40px;
+    width:480px;
+    border-radius: 4px;
+}
+
+#submit{
+    width:10em;
+    height:3em;
+    margin:0;
+    position: absolute;
+    top:93%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    border-radius: 30px;
+    }
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.696);
+}    
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.select{
+    display:flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type:none ;
+    text-align: left;
+    padding: 30px;
+    background-color: rgba(10, 12, 12, 0.9);
+    color: blue;
+
+}
+    
+li{
+    display:inline;
+    padding:20px;
+    background-color: black;
+    color:white;
+
+}
+
+.select input{
+
+    background-color: rgb(300, 300, 200);
+    border: none;
+    border-radius: 20px;
+    width:200px
+    
+}
+.select input::file-selector-button{
+    background: #9255f5;
+    color: aliceblue;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    
+    cursor: pointer;
+
+}
+.tables{
+    width: 900px;
+    margin: 0 auto;
+}
+table{
+    text-align: left;
+    float: left;
+    width: 400px;
+}
+hr{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
